@@ -1,0 +1,245 @@
+{
+  "title": "Gestione attestati di partecipazione",
+  "description": "Prototipo per organizzare corsi, registrare partecipanti e predisporre attestati sulla base di elenchi importati. I dati mostrati sono inventati; la selezione del file è rappresentata come passaggio senza caricamento o servizi esterni.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Panoramica",
+      "description": "Riepilogo dei corsi e degli attestati da preparare. Usa le tabelle delle altre sezioni per cercare e filtrare i dati.",
+      "metrics": [
+        {
+          "label": "Corsi registrati",
+          "value": "12"
+        },
+        {
+          "label": "Partecipanti",
+          "value": "186"
+        },
+        {
+          "label": "Attestati da predisporre",
+          "value": "24"
+        },
+        {
+          "label": "Attestati pronti",
+          "value": "162"
+        }
+      ],
+      "columns": [
+        "Corso",
+        "Organizzazione",
+        "Data",
+        "Partecipanti",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lumo · Sicurezza in aula",
+          "Officina Nubi",
+          "12/03/2025",
+          "18",
+          "Elenco da verificare"
+        ],
+        [
+          "Vela · Strumenti digitali",
+          "Studio Bruma",
+          "18/03/2025",
+          "22",
+          "Da predisporre"
+        ],
+        [
+          "Nubi · Accoglienza e servizi",
+          "Atelier Rugiada",
+          "25/03/2025",
+          "16",
+          "Pronto"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "corsi",
+      "title": "Corsi",
+      "description": "Consulta e filtra i corsi. Registra un nuovo corso per associare l’elenco dei partecipanti e tenere traccia degli attestati.",
+      "metrics": [
+        {
+          "label": "Corsi attivi",
+          "value": "12"
+        },
+        {
+          "label": "In preparazione",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Titolo corso",
+        "Organizzazione",
+        "Data",
+        "Durata",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Sicurezza in aula",
+          "Officina Nubi",
+          "12/03/2025",
+          "6 ore",
+          "Elenco da verificare"
+        ],
+        [
+          "Strumenti digitali",
+          "Studio Bruma",
+          "18/03/2025",
+          "8 ore",
+          "Da predisporre"
+        ],
+        [
+          "Accoglienza e servizi",
+          "Atelier Rugiada",
+          "25/03/2025",
+          "4 ore",
+          "Pronto"
+        ]
+      ],
+      "form": [
+        "Titolo corso",
+        "Organizzazione",
+        "Data",
+        "Durata",
+        "Stato"
+      ]
+    },
+    {
+      "id": "partecipanti",
+      "title": "Partecipanti",
+      "description": "Esamina i nominativi inventati associati ai corsi e i relativi esiti. L’elenco può essere preparato a partire da un file Excel; qui la scelta del file è descritta come passaggio, senza caricamento effettivo.",
+      "metrics": [
+        {
+          "label": "Iscritti",
+          "value": "186"
+        },
+        {
+          "label": "Presenze da verificare",
+          "value": "7"
+        }
+      ],
+      "columns": [
+        "Nominativo",
+        "Corso",
+        "Organizzazione",
+        "Presenza",
+        "Esito"
+      ],
+      "rows": [
+        [
+          "Lia Sereni",
+          "Sicurezza in aula",
+          "Officina Nubi",
+          "Presente",
+          "Completato"
+        ],
+        [
+          "Timo Vallar",
+          "Sicurezza in aula",
+          "Officina Nubi",
+          "Presente",
+          "Completato"
+        ],
+        [
+          "Nara Foschi",
+          "Strumenti digitali",
+          "Studio Bruma",
+          "Da verificare",
+          "In attesa"
+        ],
+        [
+          "Miro Daven",
+          "Accoglienza e servizi",
+          "Atelier Rugiada",
+          "Presente",
+          "Completato"
+        ]
+      ],
+      "form": [
+        "Nominativo",
+        "Corso",
+        "Organizzazione",
+        "Presenza",
+        "Esito"
+      ]
+    },
+    {
+      "id": "attestati",
+      "title": "Attestati",
+      "description": "Filtra gli attestati per corso e stato, quindi prepara la registrazione di un attestato completato. Le operazioni sono rappresentate nel prototipo.",
+      "metrics": [
+        {
+          "label": "Da predisporre",
+          "value": "24"
+        },
+        {
+          "label": "Pronti",
+          "value": "162"
+        },
+        {
+          "label": "Corsi coinvolti",
+          "value": "12"
+        }
+      ],
+      "columns": [
+        "Nominativo",
+        "Corso",
+        "Organizzazione",
+        "Data corso",
+        "Esito",
+        "Stato attestato"
+      ],
+      "rows": [
+        [
+          "Lia Sereni",
+          "Sicurezza in aula",
+          "Officina Nubi",
+          "12/03/2025",
+          "Completato",
+          "Pronto"
+        ],
+        [
+          "Timo Vallar",
+          "Sicurezza in aula",
+          "Officina Nubi",
+          "12/03/2025",
+          "Completato",
+          "Pronto"
+        ],
+        [
+          "Nara Foschi",
+          "Strumenti digitali",
+          "Studio Bruma",
+          "18/03/2025",
+          "In attesa",
+          "Da predisporre"
+        ],
+        [
+          "Miro Daven",
+          "Accoglienza e servizi",
+          "Atelier Rugiada",
+          "25/03/2025",
+          "Completato",
+          "Pronto"
+        ]
+      ],
+      "form": [
+        "Nominativo",
+        "Corso",
+        "Organizzazione",
+        "Data corso",
+        "Esito",
+        "Stato attestato"
+      ]
+    }
+  ],
+  "theme": {
+    "palette": "blu-istituzionale",
+    "fonts": "istituzionale"
+  }
+}
